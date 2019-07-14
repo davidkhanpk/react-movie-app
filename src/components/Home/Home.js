@@ -89,7 +89,7 @@ class Home extends Component {
                         })}
                         </FourColGrid>
                             {this.state.loading ? <Spinner />: null}
-                            { (this.state.currentPage <= this.state.totalPages && !this.state.loading ) ?
+                            { !this.state.loading  ?
                             <LoadMoreButton text="Load More" onClick={this.loadMoreItems} />
                             : null }
                     </div>
